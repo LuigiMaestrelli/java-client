@@ -16,7 +16,6 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 
 import microsoft.aspnet.signalr.client.LogLevel;
-import microsoft.aspnet.signalr.client.Logger;
 import microsoft.aspnet.signalr.client.Platform;
 import microsoft.aspnet.signalr.client.SignalRFuture;
 import microsoft.aspnet.signalr.client.http.android.AndroidPlatformComponent;
@@ -35,8 +34,8 @@ public class AndroidTestPlatformContext implements TestPlatformContext {
     }
     
     @Override
-    public Logger getLogger() {
-        return new Logger() {
+    public microsoft.aspnet.signalr.client.Logger getLogger() {
+        return new microsoft.aspnet.signalr.client.Logger() {
             
             @Override
             public void log(String message, LogLevel level) {

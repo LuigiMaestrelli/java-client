@@ -6,15 +6,15 @@ See License.txt in the project root for license information.
 
 package microsoft.aspnet.signalr.client.test.integration.tests;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonPrimitive;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.Semaphore;
-
-import com.google.gson.JsonElement;
-import com.google.gson.JsonPrimitive;
 
 import microsoft.aspnet.signalr.client.Action;
 import microsoft.aspnet.signalr.client.ConnectionState;

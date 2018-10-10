@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="microsoft.aspnet.signalr.client.android.test.integration"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    xmlns:tools="http://schemas.android.com/tools"
+    package="microsoft.aspnet.signalr.client.android.test.integration">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+    <uses-sdk/>
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name="microsoft.aspnet.signalr.client.test.integration.android.MainActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
